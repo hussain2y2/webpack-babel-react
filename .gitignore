@@ -2,7 +2,7 @@
 node_modules
 
 # Testing Snapshots
-tests/__snapshots__/
+src/tests/__snapshots__/
 
 # IDE Specific
 .idea
