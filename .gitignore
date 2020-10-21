@@ -1,0 +1,15 @@
+# Node Modules
+node_modules
+
+# Testing Snapshots
+tests/__snapshots__/
+
+# IDE Specific
+.idea
+
+# Compiled
+public
+
+# Files to be ingnored
+.env
+package-lock.json
