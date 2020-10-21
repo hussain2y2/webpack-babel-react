@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import renderer from 'react-test-renderer'
-import App from '../App'
+import App from '../src/App'
 
 describe('App Component', () => {
   const wrapper = shallow(<App />)

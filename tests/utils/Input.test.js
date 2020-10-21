@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, cleanup, fireEvent } from '@testing-library/react'
-import Input from '../../utils/Input'
+import Input from '../../src/utils/Input'
 
 describe('Input Component', () => {
   let input, inputID
