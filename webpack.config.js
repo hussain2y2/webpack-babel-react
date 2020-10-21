@@ -1,29 +1,38 @@
-const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const { join, resolve } = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: 'src/index.js',
   mode: process.env.NODE_ENV,
-  devtool: "source-map",
+  devtool: 'source-map',
+  resolve: {
+    alias: {
+      src: resolve(__dirname, 'src/'),
+      utilities: resolve(__dirname, 'src/utilities/'),
+      layouts: resolve(__dirname, 'src/layouts/'),
+      assets: resolve(__dirname, 'src/assets/')
+    },
+    extensions: ['.js', '.jsx', '.scss']
+  },
   output: {
-    path: path.resolve(__dirname, "public"),
-    filename: "[name].js"
+    path: resolve(__dirname, 'public'),
+    filename: '[name].js'
   },
   module: {
     rules: [
-      {test: /\.(js|jsx)$/, use: 'babel-loader'},
-      {test: /\.(css|scss)$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']}
+      {
+        test: /\.(js|jsx)$/,
+        use: 'babel-loader'
+      }, {
+        test: /\.(css|scss)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
-    }),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    }),
+      template: 'src/index.html'
+    })
   ],
   optimization: {
     splitChunks: {
@@ -33,5 +42,10 @@ module.exports = {
         }
       }
     }
+  },
+  devServer: {
+    contentBase: join(__dirname, 'public'),
+    compress: true,
+    open: true
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, cleanup, fireEvent } from '@testing-library/react'
-import Input from '../../src/utils/Input'
+import Input from '../../src/utilities/Input'
 
 describe('Input Component', () => {
   let input, inputID
@@ -20,7 +20,7 @@ describe('Input Component', () => {
     expect(input.value).toBe('ok')
   })
 
-  it('should have an element with this id', () => {
+  it('should have an element with id: username', () => {
     expect(inputID).not.toBeNull()
   })
 
