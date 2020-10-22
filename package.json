@@ -7,8 +7,8 @@
     "watch": "webpack serve --mode development --env development",
     "build": "webpack --mode production",
     "build:watch": "webpack --watch",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watchAll"
   },
   "keywords": [
     "react-webpack",
@@ -23,6 +23,7 @@
   "dependencies": {
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-redux": "^7.2.1",
     "redux": "^4.0.5",
     "redux-saga": "^1.1.3"
   },

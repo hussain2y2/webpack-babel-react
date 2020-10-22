@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Input = ({id = '', label = '', type = 'text'}) => {
+const Input = ({id, label, type = 'text'}) => {
   const [value, handleChange] = useState('')
 
   return (

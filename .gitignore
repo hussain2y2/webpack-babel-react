@@ -1,8 +1,10 @@
 # Node Modules
 node_modules
 
-# Testing Snapshots
-tests/__snapshots__/
+# Snapshots & Coverage Files
+coverage
+__tests__/__snapshots__/
+__tests__/__coverage__/*
 
 # IDE Specific
 .idea

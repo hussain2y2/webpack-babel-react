@@ -10,9 +10,9 @@ module.exports = {
       src: resolve(__dirname, 'src/'),
       utilities: resolve(__dirname, 'src/utilities/'),
       layouts: resolve(__dirname, 'src/layouts/'),
-      assets: resolve(__dirname, 'src/assets/')
+      modules: resolve(__dirname, 'src/modules/')
     },
-    extensions: ['.js', '.jsx', '.scss']
+    extensions: ['.js', '.jsx']
   },
   output: {
     path: resolve(__dirname, 'public'),
