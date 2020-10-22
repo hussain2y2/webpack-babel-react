@@ -1,11 +1,6 @@
 # Node Modules
 node_modules
 
-# Snapshots & Coverage Files
-__tests__/__snapshots__/
-!__tests__/__coverage__/
-__tests__/__coverage__/*
-
 # IDE Specific
 .idea
 
