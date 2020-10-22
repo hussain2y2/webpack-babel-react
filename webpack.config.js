@@ -11,7 +11,7 @@ module.exports = {
       config: resolve(__dirname, 'config/'),
       utilities: resolve(__dirname, 'src/utilities/'),
       layouts: resolve(__dirname, 'src/layouts/'),
-      modules: resolve(__dirname, 'src/modules/')
+      pages: resolve(__dirname, 'src/pages/')
     },
     extensions: ['.js', '.jsx']
   },
