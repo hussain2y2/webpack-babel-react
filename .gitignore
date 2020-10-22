@@ -2,8 +2,8 @@
 node_modules
 
 # Snapshots & Coverage Files
-coverage
 __tests__/__snapshots__/
+!__tests__/__coverage__
 __tests__/__coverage__/*
 
 # IDE Specific

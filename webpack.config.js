@@ -8,6 +8,7 @@ module.exports = {
   resolve: {
     alias: {
       src: resolve(__dirname, 'src/'),
+      config: resolve(__dirname, 'config/'),
       utilities: resolve(__dirname, 'src/utilities/'),
       layouts: resolve(__dirname, 'src/layouts/'),
       modules: resolve(__dirname, 'src/modules/')
