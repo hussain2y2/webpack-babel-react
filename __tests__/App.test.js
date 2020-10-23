@@ -14,11 +14,6 @@ describe('App Component', () => {
     expect(wrapper.find('.app').length).toBe(1)
   })
 
-  it('should have the right message in the dom',  () => {
-    const message = 'Hello World!'
-    expect(wrapper.find('h3').text()).toBe(message)
-  })
-
   it('renders correctly', () => {
     const snapShot = renderer.create(<App />).toJSON()
     expect(snapShot).toMatchSnapshot()

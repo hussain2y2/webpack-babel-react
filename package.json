@@ -21,9 +21,12 @@
   "author": "Hussain Ahmad",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.5.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "reactstrap": "^8.6.0",
     "redux": "^4.0.5",
     "redux-saga": "^1.1.3"
   },

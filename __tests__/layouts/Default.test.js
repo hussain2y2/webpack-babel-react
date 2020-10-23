@@ -13,12 +13,4 @@ describe('Default Layout Component', () => {
   it('should have class: default-layout', () => {
     expect(wrapper.find('.default-layout').length).toBe(1)
   })
-
-  it('should have h4 tag',() => {
-    expect(wrapper.find('h4').length).toBe(1)
-  })
-
-  it('should h4 text: Default Layout', () => {
-    expect(wrapper.find('h4').text()).toBe('Default Layout')
-  })
 })

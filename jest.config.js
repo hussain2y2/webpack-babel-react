@@ -9,10 +9,6 @@ module.exports = {
   coverageDirectory: '<rootDir>/__coverage__/',
   moduleNameMapper: {
     '^src(.*)$': '<rootDir>/src$1',
-    '^config(.*)$': '<rootDir>/config$1',
-    '^layouts(.*)$': '<rootDir>/src/layouts$1',
-    '^pages(.*)$': '<rootDir>/src/pages$1',
-    '^utilities(.*)$': '<rootDir>/src/utilities$1',
     '^.+\\.(css|less|scss)$': 'babel-jest'
   }
 }
