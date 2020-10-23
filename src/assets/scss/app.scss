@@ -4,8 +4,6 @@ body {
   font-size: .875em;
 }
 
-.header {
-  -webkit-box-shadow: 0 1px 5px -1px #D2D2D2;
-  -moz-box-shadow: 0 1px 5px -1px #D2D2D2;
-  box-shadow: 0 1px 5px -1px #D2D2D2;
-}
+@import 'topbar';
+@import 'sideBar';
+@import 'footer';

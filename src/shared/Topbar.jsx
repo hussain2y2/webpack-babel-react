@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Navbar, Nav, NavItem
 } from 'reactstrap'
 
-class Navigation extends React.Component {
+class Topbar extends Component {
   render() {
     return(
-      <Navbar className="header" color="light" light expand="md">
+      <Navbar className="topBar" color="light" light expand="md">
         <Nav className="mr-auto" navbar>
           <NavItem>
             <Link to="/" className="nav-link">Home</Link>
@@ -27,4 +27,4 @@ class Navigation extends React.Component {
   }
 }
 
-export default Navigation
+export default Topbar

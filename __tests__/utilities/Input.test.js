@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import { render, cleanup, fireEvent } from '@testing-library/react'
-import Input from 'utilities/Input'
+import Input from 'src/utilities/Input'
 
 describe('Input Component', () => {
   let input, inputID

@@ -1,7 +1,7 @@
-import Home from 'pages/Home'
-import About from 'pages/About'
-import Portfolio from 'pages/Portfolio'
-import News from 'pages/News'
+import Home from 'src/pages/Home'
+import About from 'src/pages/About'
+import Portfolio from 'src/pages/Portfolio'
+import News from 'src/pages/News'
 
 const routes = [
   {

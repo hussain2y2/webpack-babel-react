@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Home from 'pages/Home'
+import Home from 'src/pages/Home'
 
 describe('Home Component', () => {
   const wrapper = shallow(<Home />)

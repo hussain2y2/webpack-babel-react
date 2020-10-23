@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Default from 'layouts/Default'
+import Default from 'src/layouts/Default'
 
 describe('Default Layout Component', () => {
   const wrapper = shallow(<Default />)
