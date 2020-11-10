@@ -1,10 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Default from 'src/layouts/Default'
+import OneColumn from 'src/layouts/OneColumn'
 
-describe('Default Layout Component', () => {
-  const wrapper = shallow(<Default />)
+describe('One Layout Component', () => {
+  const wrapper = shallow(<OneColumn />)
 
   it('component rendered', () => {
     expect(wrapper.exists()).toBe(true)

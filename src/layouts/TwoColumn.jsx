@@ -9,7 +9,7 @@ import {
 import Topbar from 'src/shared/Topbar'
 import routes from 'src/routes'
 
-class Default extends Component {
+class TwoColumn extends Component {
   render() {
     return (
       <div className="default-layout">
@@ -34,4 +34,4 @@ class Default extends Component {
   }
 }
 
-export default Default
+export default TwoColumn
