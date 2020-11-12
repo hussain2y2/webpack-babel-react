@@ -8,7 +8,7 @@ exports[`App Component renders correctly 1`] = `
     className="default-layout"
   >
     <nav
-      className="header navbar navbar-expand-md navbar-light bg-light"
+      className="topBar navbar navbar-expand-md navbar-light bg-light"
     >
       <ul
         className="mr-auto navbar-nav"
@@ -76,6 +76,12 @@ exports[`App Component renders correctly 1`] = `
           <h4>
             Home Page
           </h4>
+          <button
+            className="btn btn-sm btn-primary"
+            onClick={[Function]}
+          >
+            Click Me
+          </button>
         </div>
       </div>
     </div>
